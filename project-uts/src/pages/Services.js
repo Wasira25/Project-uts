@@ -70,9 +70,9 @@ const Services = () => {
           <p className="text-light">Solusi tenaga kerja dan manajemen bisnis profesional</p>
         </div>
 
-        <Row className="g-4">
+        <Row className="g-3">
           {services.map((service, idx) => (
-            <Col key={idx} md={6} lg={4} data-aos="fade-up" data-aos-delay={idx * 100}>
+            <Col key={idx} md={4} lg={3} data-aos="fade-up" data-aos-delay={idx * 100}>
               <Card
                 style={{
                   background: 'rgba(255, 255, 255, 0.1)',
@@ -81,17 +81,21 @@ const Services = () => {
                   border: '1px solid rgba(255, 255, 255, 0.2)',
                   color: '#fff',
                   borderRadius: '15px',
-                  minHeight: '100%',
+                  minHeight: 'auto',
+                  padding: '1rem',
+                  cursor: 'pointer',
                   transition: 'transform 0.3s ease',
                 }}
                 className="h-100 shadow-sm card-hover"
               >
                 <Card.Body>
-                  <Card.Title className="fw-semibold mb-3">{service.title}</Card.Title>
-                  <Card.Text as="div">
-                    <ul style={{ paddingLeft: '1rem' }}>
+                  <Card.Title className="fw-semibold mb-2" style={{ fontSize: '1.1rem' }}>
+                    {service.title}
+                  </Card.Title>
+                  <Card.Text as="div" style={{ fontSize: '0.9rem' }}>
+                    <ul style={{ paddingLeft: '1rem', marginBottom: 0 }}>
                       {service.content.map((item, i) => (
-                        <li key={i} style={{ marginBottom: '8px' }}>{item}</li>
+                        <li key={i} style={{ marginBottom: '6px' }}>{item}</li>
                       ))}
                     </ul>
                   </Card.Text>

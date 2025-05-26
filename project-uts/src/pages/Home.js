@@ -18,30 +18,23 @@ const Home = () => {
       }}
     >
       <Container data-aos="fade-up" style={{ zIndex: 2, maxWidth: '800px' }}>
-        <h1 className="fw-bold display-4 mb-4">Selamat Datang di <span style={{ color: '#ffd700' }}>PT Provis Garuda Services</span></h1>
+        <h1 className="mb-2" style={{ color: '#e0e0e0' }}>Selamat Datang di</h1>
+        <h1 className="fw-bold mb-4" style={{ color: '#1E90FF' }}>
+          PT Provis Garuda Services
+        </h1>
         <p className="lead" style={{ lineHeight: '1.8', color: '#e0e0e0' }}>
           <strong>
-            PT Provis Garuda Services adalah perusahaan terkemuka dalam penyediaan tenaga kerja dan solusi Business Process Outsourcing (BPO) di Indonesia.  
+            PT Provis Garuda Services adalah perusahaan terkemuka dalam penyediaan tenaga kerja dan solusi Business Process Outsourcing (BPO) di Indonesia.
             Kami berkomitmen memberikan layanan profesional yang membantu bisnis Anda berkembang dengan efisiensi dan kualitas sumber daya manusia terbaik.
           </strong>
         </p>
 
-        {/* Optional CTA Button */}
         <div className="mt-4">
-          <Button variant="warning" size="lg" className="fw-semibold shadow">
+          <Button variant="info" size="lg" className="fw-semibold shadow">
             Hubungi Kami
           </Button>
         </div>
       </Container>
-
-      {/* Float Animation */}
-      <style jsx>{`
-        @keyframes float {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
-          100% { transform: translateY(0px); }
-        }
-      `}</style>
     </section>
   );
 };

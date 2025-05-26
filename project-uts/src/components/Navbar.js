@@ -16,7 +16,11 @@ const NavigationBar = () => {
       }}
     >
       <Container>
-        <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center fw-bold">
+        <Navbar.Brand
+          as={NavLink}
+          to="/"
+          className="d-flex align-items-center fw-bold brand-text"
+        >
           <img
             src="/images/logo.jpeg"
             alt="Logo"
@@ -44,19 +48,30 @@ const NavigationBar = () => {
         </Navbar.Collapse>
       </Container>
 
-      {/* Custom CSS */}
       <style jsx="true">{`
+        .brand-text {
+          color: #0a3d91; /* Biru tua */
+          font-size: 1.2rem;
+          transition: color 0.3s ease;
+        }
+
+        .brand-text:hover {
+          color: #052c65; /* Lebih tua saat hover */
+        }
+
         .nav-link-custom {
           font-weight: 500;
           margin-left: 10px;
           transition: color 0.3s ease;
         }
+
         .nav-link-custom:hover {
-          color:rgb(18, 108, 243) !important;
+          color: rgb(18, 108, 243) !important;
         }
+
         .nav-link-custom.active {
-          color:rgb(18, 74, 243) !important;
-          border-bottom: 2px solidrgb(18, 55, 243);
+          color: rgb(18, 74, 243) !important;
+          border-bottom: 2px solid rgb(18, 55, 243);
         }
       `}</style>
     </Navbar>
