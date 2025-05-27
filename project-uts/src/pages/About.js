@@ -42,7 +42,7 @@ const About = () => {
                 border: '1px solid rgba(255, 255, 255, 0.4)',
               }}
             >
-              <h2 className="fw-bold mb-4" style={{ color: '#1E3A8A' }}>
+              <h2 className="fw-bold mb-4" style={{ color: '#1E90ff' }}>
                 PT Provis Garuda Services
               </h2>
               <p style={{ color: '#eaeaea', fontSize: '1.05rem' }}>
