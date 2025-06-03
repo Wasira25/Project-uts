@@ -38,7 +38,6 @@ const Home = () => {
           </div>
         </Container>
       </section>
-      <Footer />
     </>
   );
 };
